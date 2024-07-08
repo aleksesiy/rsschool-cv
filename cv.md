@@ -1,5 +1,5 @@
 1. Aleksey Ryabinin
-2. email: lexa.svsk@gmail.com ; discord: pyoh1988 
+2. email: lexa.svsk@gmail.com ; discord: pyoh1988 ; github: @aleksesiy
 3. I'm just starting out, but I hope to become a skilled professional one day.
 4. -
 5. -
