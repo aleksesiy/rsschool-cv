@@ -6,6 +6,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
             
         }
         .basic-txt{
@@ -18,50 +19,131 @@
          width: 70%;
          height: 1000%;
         } 
-        .avatar {
-            width: 40%;
-            justify-self: center;
-        } 
-        .contacts {
-            width: 40%;
+        #contacts {
+            
             background-color: #99B5D8;
             border-radius: 20px;
             padding: 30px;
             margin: 30px;
         }
         .title-txt {
-            font: bold 24px Verdana, sans-serif;
+            font: 32px Arial, sans-serif;
         }
         .contacts-txt{
             font: 18px monospace;
             background-color: #8a939d;
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 10px;          
+        }
+        .contacts-txt-footer{
+            font: 18px monospace;
+            padding: 20px;
+            display: flex;
+            align-items: center;
             
-           
         }
         a {
             text-decoration: none;
             color: #4d4f52;
+            transition: color 0.5s;
+
+        }
+        body{
+            min-height: 100vh;
+            margin: 0; padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        #skills{
+            background-color: #99B5D8;
+            border-radius: 20px;
+            padding: 30px;
+            margin: 30px;
+        }
+        #languages{
+            background-color: #99B5D8;
+            border-radius: 20px;
+            padding: 30px;
+            margin: 30px;
+        }
+        #summary{
+            background-color: #99B5D8;
+            border-radius: 20px;
+            padding: 30px;
+            margin: 30px;
+        }
+        .main-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .section {
+        width: 50%;
+        
         }
 
+        h1 {
+            color: #2b3037;
+            font: Arial, sans-serif;
+        }
+
+        .header{
+            background-color: #babdc0;
+            font: 18px monospace;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        
     </style>
     <link rel="stylesheet" href="style.css"/>
-    <link rel="icon" src="assets/svg/favicon.ico"/>
+    <link rel="icon" href="./assets/svg/favicon.ico"/>
 <title>CV</title>
 </head>
 <body>
+    <style>
+        .footer{
+         
+            background-color: #babdc0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    </style>
+
+<header class="header">
+    <nav>
+        <img src="./assets/svg/favicon.ico" width="24px" height="24px"> &nbsp;
+        <a href="#contacts"> Contacts</a> &nbsp;
+        <a href="#summary"> About me </a> &nbsp;
+        <a href="#skills"> My skills </a> &nbsp;
+        <a href="#languages"> My languages </a> &nbsp;
+        <a href="#projects">My projects</a> &nbsp;
+        <a href="#code"> Code examples</a> &nbsp;
+    </nav>
+</header>
+
+
+
 
 <!-- <img class="center" src="assets/img/religion.jpg" alt="Banner"> -->
-<main>
 
-<div class="avatar">
+
+
+
+<main class="main-container">
+
+<section>
+
 <img src="assets/img/avatar.jpg" alt="Avatar" width="200px" height="200px">
-</div> 
+<h1 style="color: #2b3037; font-family: Arial, sans-serif;">Aleksey Ryabinin</h1>
 
-<section class="contacts">
-<p class="title-txt">Aleksey Ryabinin</p>
+</section>
 
+
+
+<section id="contacts">
 <table class="contacts-txt">
     <tr> 
       <td><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">discord: pyoh1988</a></td> 
@@ -75,30 +157,37 @@
       
     </tr>
   </table>
-
-<p class="basic-txt">I'm a beginner programmer. At this exact moment I'm probably busy doing my js course.
-     Also, I'm kinda good at blender (check out my ig), and I learn premiere pro and photoshop</p>
-
-
 </section>
+
+<section id="summary">
+<p class="basic-txt">I'm a beginner programmer. At this exact moment I'm probably busy doing my js course.</p>
+</section>
+
+
+
+<section id="skills">
+    Blender
+    html
+    css
+    premiere pro
+</section>
+
+<section id="languages">
+<ul>
+    <li>English - b2</li>
+    <li>Russian - native</li>
+</ul>
+</section>
+
+
 
 
 </main>
 
-<br>
-</br>
-<p class="basic-txt">yeah this is my resume</p>
-
-
-
-
-
-
-
-
-
-
-
+<footer class="footer">
+<p class="contacts-txt-footer"> <img src="./assets/svg/github-mark.svg" alt="github-logo" width="32px" height="32px"> &nbsp;<a href="https://github.com/aleksesiy">my github</a></p>
+    <p class="contacts-txt-footer">Made in 2024, thanks to  &nbsp; <a href="https://rs.school/"><img src="./assets/svg/rs-logo.svg" alt="rs-logo" width="64px" height="64px"></a></p>
+</footer>
 
 </body>
 </html>
