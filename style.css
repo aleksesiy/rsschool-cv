@@ -33,6 +33,20 @@ html {
 .basic-txt {
   font: 18px/1.5 Verdana, sans-serif;
 }
+.short{
+  font: 22px/1.4 Verdana, sans-serif;
+  text-align: center;
+  color: #333538;
+ 
+}
+/* .pfp {
+ 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  
+} */
 
 .title-txt {
   font: 34px/1.3 Arial, sans-serif;
@@ -49,7 +63,7 @@ html {
 
 a {
   text-decoration: none;
-  color: #4d4f52;
+  color: #222830;
   transition: color 0.5s;
 }
 
@@ -64,11 +78,12 @@ body {
 }
 
 #contacts {            
-  font: 16px monospace;
+  font: 18px monospace;
   background-color: #8a939d;
   padding: 16px;                
   border-radius: 10px;
   margin: 30px;
+  
 }
 
 #profile {
@@ -147,6 +162,7 @@ h1 {
   justify-content: space-around;
   width: 100%;
   box-sizing: border-box;
+  min-width: 650px;
 }
 
 .nav-list {
@@ -155,11 +171,12 @@ h1 {
   align-items: center;
   list-style: none;
   margin: 0;
+  flex-shrink: 1;
 }
 
 .nav-link {     
   padding: 0 30px;
-  line-height: 10px;
+  line-height: 20px;
   transition: 0.3s;
 }
 
@@ -189,4 +206,6 @@ main {
   margin: 0;
   width: 100%;
   box-sizing: border-box;
+  min-width: 768px;
 }
+  
