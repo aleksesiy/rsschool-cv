@@ -1,53 +1,38 @@
 <!DOCTYPE html>
-<html lang = en>
+<html lang="en">
 
 <head>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./assets/svg/favicon.ico">
     <title>CV</title>
-    
 </head>
 
 <body>
-    <style>
-        .footer {
-
-            background-color: #a1acb7;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 0;
-        }
-    </style>
-
     <header class="header">
         <div class="container">
             <nav>
                 <ul class="nav-list">
-                    <li> <img src="./assets/svg/favicon.ico" alt="pfp" width="32px" height="32px"></li>
-                    <li><a class="nav-link" href="#contacts"> Contacts</a> </li>
-                    <li><a class="nav-link" href="#summary"> About&nbsp;me </a> </li>
-                    <li><a class="nav-link" href="#skills"> My skills </a> </li>
-                    <li><a class="nav-link" href="#languages"> My languages </a> </li>
+                    <li><img src="./assets/svg/favicon.ico" alt="pfp" width="32" height="32"></li>
+                    <li><a class="nav-link" href="#contacts">Contacts</a></li>
+                    <li><a class="nav-link" href="#summary">About&nbsp;me</a></li>
+                    <li><a class="nav-link" href="#skills">My skills</a></li>
+                    <li><a class="nav-link" href="#languages">My languages</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-
     <main>
-
         <section class="block-container">
-
-            <section class="blocks-1">
+            <div class="blocks-1">
                 <section id="profile">
-                    <img class="pfp" alt="pfp" src="assets/img/avatar.jpg" alt="Avatar" width="200px" height="200px" style="border-radius: 50%;">
-                    <h1 style="color: #2b3037; font-size: 32px; font-family: Arial, sans-serif; margin: 0%;">Aleksey Ryabinin</h1>
+                    <img class="pfp" src="assets/img/avatar.jpg" alt="Avatar" width="200" height="200">
+                    <h1>Aleksey Ryabinin</h1>
                     <p class="short">3d designer, frontend dev, <em>experienced pc user</em></p>
                 </section>
 
                 <section id="skills">
-                    <h2 style="font-family: monospace; line-height: 1%;">My skills</h2>
+                    <h2>My skills</h2>
                     <ul>
                         <li class="basic-txt">HTML</li>
                         <li class="basic-txt">CSS</li>
@@ -55,73 +40,65 @@
                         <li class="basic-txt">Premiere Pro</li>
                     </ul>
                 </section>
+            </div>
 
-
-
-
-            </section>
-
-            <section class="blocks-1">
+            <div class="blocks-1">
                 <section id="contacts">
-                    <h2 style="font-family: monospace; line-height: 1%; font-size: 20px;" class="section-title">Contact
-                        me</h2>
+                    <h2>Contact me</h2>
                     <table class="contacts-txt">
-                        <tr>
-                            <td><a class="link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">discord:
-                                    pyoh1988</a><img src="./assets/img/external-link-icon.png" alt="discord" width="10px"
-                                    height="10px">&nbsp;</td>
-                            <td><a class="link" href="https://github.com/aleksesiy">github: @aleksesiy</a><img
-                                        src="./assets/img/external-link-icon.png" width="10px" alt="github" height="10px"></a></td>
-                        </tr>
-                        <tr>
-                            <td><a class="link" href="https://www.t.me/pyoh1988">telegram: @pyoh1988</a><img
-                                        src="./assets/img/external-link-icon.png" width="10px" alt="telegram" height="10px"></a>&nbsp;
-                            </a></td>
-                            <td><a class="link"
-                                    href="https://www.instagram.com/dddpyoh?igsh=MXA0aXQ4N29pYTZoYQ==">ig:
-                                    @dddpyoh</a><img src="./assets/img/external-link-icon.png" alt="ig" width="10px" height="10px">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2"><a>email: lexa.svsk@gmail.com</a></td>
-                        </tr>
+                        <tbody>
+                            <tr>
+                                <td><a class="link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">discord: pyoh1988</a>
+                                    <img src="./assets/img/external-link-icon.png" alt="discord" width="10" height="10">
+                                </td>
+                                <td><a class="link" href="https://github.com/aleksesiy">github: @aleksesiy</a>
+                                    <img src="./assets/img/external-link-icon.png" width="10" alt="github" height="10">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a class="link" href="https://www.t.me/pyoh1988">telegram: @pyoh1988</a>
+                                    <img src="./assets/img/external-link-icon.png" width="10" alt="telegram" height="10">
+                                </td>
+                                <td><a class="link" href="https://www.instagram.com/dddpyoh?igsh=MXA0aXQ4N29pYTZoYQ==">ig: @dddpyoh</a>
+                                    <img src="./assets/img/external-link-icon.png" alt="ig" width="10" height="10">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">email: lexa.svsk@gmail.com</td>
+                            </tr>
+                        </tbody>
                     </table>
                 </section>
+
                 <section id="summary">
-                    <h2 style="font-family: monospace; line-height: 1%;" class="section-title">About me</h2>
+                    <h2>About me</h2>
                     <p class="basic-txt">I'm a beginner programmer. At this exact moment I'm probably busy doing my js
                         course. Also I know blender 3d, learn photoshop and premiere pro. Want to make my own game one
-                        day. And a big buck, surely </p>
+                        day. And a big buck, surely.</p>
                 </section>
-                <section id="languages">
-                    <h2 style="font-family: monospace; line-height: 1%;" class="section-title">My languages</h2>
-                    <ul>
 
+                <section id="languages">
+                    <h2>My languages</h2>
+                    <ul>
                         <li class="basic-txt">English &mdash; Intermediate. 850+ days on duolingo xd. Use it everyday, I
                             speak it almost fluently</li>
                         <li class="basic-txt">Russian &mdash; Native. What needs more to be said?</li>
                     </ul>
                 </section>
-
-            </section>
-
-
-
+            </div>
         </section>
-
-
-
     </main>
 
     <footer class="footer">
         <div class="container">
-            <p class="contacts-txt-footer"> <img src="./assets/svg/github-mark.svg" alt="github-logo" width="32px"
-                    height="32px"> &nbsp;<a class="link" href="https://github.com/aleksesiy">my github &nbsp;
-                    &nbsp;&nbsp; &nbsp; </a>
-                Made in 2024, thanks to &nbsp; <a class="link" href="https://rs.school/courses/javascript-ru"><img
-                        src="./assets/svg/rs-logo.svg" alt="rs-logo" width="64px" height="64px"></a></p>
+            <p class="contacts-txt-footer">
+                <img src="./assets/svg/github-mark.svg" alt="github-logo" width="32" height="32"> &nbsp;<a class="link"
+                    href="https://github.com/aleksesiy">my github</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                Made in 2024, thanks to &nbsp;
+                <a class="link" href="https://rs.school/courses/javascript-ru"><img src="./assets/svg/rs-logo.svg"
+                        alt="rs-logo" width="64" height="64"></a>
+            </p>
         </div>
-
     </footer>
 </body>
 
